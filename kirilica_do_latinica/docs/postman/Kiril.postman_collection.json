@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "28a7679b-6396-444b-8f6b-937fb8aec058",
+		"name": "Kiril",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36365642"
+	},
+	"item": [
+		{
+			"name": "Translate Cyrillic to Latin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Този текст беше написан на кирилица.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/to_latin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"to_latin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Translate Latin to Cyrillic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\": \"Tozi tekst beshe napisan na latinica.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/to_cyrillic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"to_cyrillic"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
